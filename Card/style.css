@@ -1,0 +1,88 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+#main
+{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#card
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:69%;
+    width:23%;
+    border: 1px solid black;
+}
+
+#one
+{
+    height:10%;
+    width: 100%;
+}
+
+#two
+{
+    height:65%;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1722107594773-b9934ff45127?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww');
+    background-position: center;
+    background-size: cover;
+}
+
+#three
+{
+    height:10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fourth
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:15%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#acc
+{
+    width: 30%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+#rej
+{
+    width: 30%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+#acc:hover
+{
+    background-color: green;
+}
+
+#rej:hover
+{
+    background-color: red;
+}
