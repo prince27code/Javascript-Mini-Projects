@@ -10,14 +10,11 @@ counters.forEach(counter => {
     const timer = setInterval(() => {
         count += increment
         
-        if(count >= target)
-        {
-            clearInterval(timer)
-            counter.innerText = target.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-        }
-        else
-        {
-            counter.innerText = Math.floor(count).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        if (count >= target) {
+            counter.innerText = target; // Ensure the final value is set to the target
+            clearInterval(timer);
+        } else {
+            counter.innerText = Math.ceil(count); // Update the counter text
         }
     }, 10) 
 })
